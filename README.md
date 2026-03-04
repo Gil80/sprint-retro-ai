@@ -2,6 +2,8 @@
 
 Two practical AI tools built by a Technical Project Manager to automate the most time-consuming parts of the PM workflow: **sprint retrospectives** and **release notes**.
 
+![Demo](demo/retro_demo.gif)
+
 ## Why I Built This
 
 After years of running Agile teams, I kept running into the same two problems.
