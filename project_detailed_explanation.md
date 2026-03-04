@@ -473,11 +473,11 @@ The AI collapses 8 technical categories into 4 user-friendly sections. `test` co
 
 ### The realistic fake data — a deliberate choice
 
-The example uses realistic developer names, real-sounding features (Google SSO, WebSocket notifications, usage-based billing), and plausible dates. This is intentional. When an interviewer or recruiter looks at this repo, the example data tells its own story — it reads like a real product team shipped a real release. That detail signals professional thinking.
+The example uses realistic developer names, real-sounding features (Google SSO, WebSocket notifications, usage-based billing), and plausible dates. This is intentional. When anyone looks at this repo, the example data tells its own story — it reads like a real product team shipped a real release. That detail signals professional thinking.
 
 ---
 
-## Step 9 — Interview Questions & Answers
+## Step 9 — Q&A
 
 ### Q1: "Why Python? Why not JavaScript or another language?"
 
