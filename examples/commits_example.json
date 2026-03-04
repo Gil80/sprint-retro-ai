@@ -1,0 +1,38 @@
+{
+  "source": "git",
+  "commits": {
+    "feat": [
+      {"hash": "a1b2c3d4", "message": "feat(auth): add SSO login with Google OAuth", "author": "Noa K.", "date": "2026-02-20", "scope": "auth", "description": "add SSO login with Google OAuth"},
+      {"hash": "e5f6g7h8", "message": "feat(dashboard): real-time notification bell with WebSocket", "author": "Amit R.", "date": "2026-02-19", "scope": "dashboard", "description": "real-time notification bell with WebSocket"},
+      {"hash": "i9j0k1l2", "message": "feat(export): add CSV export for reports", "author": "Tal S.", "date": "2026-02-18", "scope": "export", "description": "add CSV export for reports"},
+      {"hash": "m3n4o5p6", "message": "feat(api): add rate limiting with sliding window", "author": "Yoni D.", "date": "2026-02-17", "scope": "api", "description": "add rate limiting with sliding window"},
+      {"hash": "q7r8s9t0", "message": "feat(billing): implement usage-based billing tiers", "author": "Noa K.", "date": "2026-02-15", "scope": "billing", "description": "implement usage-based billing tiers"}
+    ],
+    "fix": [
+      {"hash": "u1v2w3x4", "message": "fix(auth): session not persisting after browser refresh", "author": "Noa K.", "date": "2026-02-20", "scope": "auth", "description": "session not persisting after browser refresh"},
+      {"hash": "y5z6a7b8", "message": "fix(dashboard): chart tooltip showing wrong date format", "author": "Amit R.", "date": "2026-02-19", "scope": "dashboard", "description": "chart tooltip showing wrong date format"},
+      {"hash": "c9d0e1f2", "message": "fix(export): timeout on large dataset exports over 10k rows", "author": "Tal S.", "date": "2026-02-18", "scope": "export", "description": "timeout on large dataset exports over 10k rows"},
+      {"hash": "g3h4i5j6", "message": "fix(api): 500 error when filtering by empty date range", "author": "Yoni D.", "date": "2026-02-16", "scope": "api", "description": "500 error when filtering by empty date range"}
+    ],
+    "perf": [
+      {"hash": "k7l8m9n0", "message": "perf(db): add composite index on events table reducing query time 60%", "author": "Yoni D.", "date": "2026-02-17", "scope": "db", "description": "add composite index on events table reducing query time 60%"}
+    ],
+    "refactor": [
+      {"hash": "o1p2q3r4", "message": "refactor(auth): extract token validation into middleware", "author": "Noa K.", "date": "2026-02-16", "scope": "auth", "description": "extract token validation into middleware"}
+    ],
+    "docs": [
+      {"hash": "s5t6u7v8", "message": "docs: update API reference for v2 endpoints", "author": "Tal S.", "date": "2026-02-20", "scope": "", "description": "update API reference for v2 endpoints"},
+      {"hash": "w9x0y1z2", "message": "docs(billing): add billing FAQ to help center", "author": "Noa K.", "date": "2026-02-15", "scope": "billing", "description": "add billing FAQ to help center"}
+    ],
+    "chore": [
+      {"hash": "a3b4c5d6", "message": "chore: bump dependencies to latest stable", "author": "Yoni D.", "date": "2026-02-14", "scope": "", "description": "bump dependencies to latest stable"}
+    ],
+    "test": [
+      {"hash": "e7f8g9h0", "message": "test(auth): add integration tests for SSO flow", "author": "Tal S.", "date": "2026-02-20", "scope": "auth", "description": "add integration tests for SSO flow"}
+    ],
+    "ci": [
+      {"hash": "i1j2k3l4", "message": "ci: add staging deployment to GitHub Actions workflow", "author": "Yoni D.", "date": "2026-02-15", "scope": "", "description": "add staging deployment to GitHub Actions workflow"}
+    ],
+    "other": []
+  }
+}

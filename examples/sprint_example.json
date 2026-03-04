@@ -1,0 +1,49 @@
+{
+  "sprint_name": "Sprint 24 - Payment Integration",
+  "sprint_goal": "Complete Stripe payment integration and resolve critical checkout bugs",
+  "start_date": "2026-02-10T09:00:00.000Z",
+  "end_date": "2026-02-21T17:00:00.000Z",
+  "total_issues": 18,
+  "completed_count": 13,
+  "not_completed_count": 5,
+  "bug_count": 4,
+  "completed": [
+    {"key": "PAY-301", "summary": "Implement Stripe checkout session API", "type": "Story", "status": "Done", "priority": "High", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend", "payments"]},
+    {"key": "PAY-302", "summary": "Build payment confirmation page UI", "type": "Story", "status": "Done", "priority": "High", "assignee": "Amit R.", "resolution": "Done", "labels": ["frontend"]},
+    {"key": "PAY-303", "summary": "Add webhook handler for payment events", "type": "Story", "status": "Done", "priority": "High", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend", "payments"]},
+    {"key": "PAY-304", "summary": "Write E2E tests for checkout flow", "type": "Task", "status": "Done", "priority": "Medium", "assignee": "Tal S.", "resolution": "Done", "labels": ["qa"]},
+    {"key": "PAY-305", "summary": "Update pricing page with new tiers", "type": "Story", "status": "Done", "priority": "Medium", "assignee": "Amit R.", "resolution": "Done", "labels": ["frontend"]},
+    {"key": "PAY-306", "summary": "Configure Stripe test environment", "type": "Task", "status": "Done", "priority": "High", "assignee": "Yoni D.", "resolution": "Done", "labels": ["devops"]},
+    {"key": "PAY-307", "summary": "Add invoice generation endpoint", "type": "Story", "status": "Done", "priority": "Medium", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend"]},
+    {"key": "PAY-308", "summary": "Fix currency conversion rounding error", "type": "Bug", "status": "Done", "priority": "Critical", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend", "payments", "bug"]},
+    {"key": "PAY-309", "summary": "Add payment method selection dropdown", "type": "Story", "status": "Done", "priority": "Medium", "assignee": "Amit R.", "resolution": "Done", "labels": ["frontend"]},
+    {"key": "PAY-310", "summary": "Fix duplicate webhook processing", "type": "Bug", "status": "Done", "priority": "High", "assignee": "Yoni D.", "resolution": "Done", "labels": ["backend", "bug"]},
+    {"key": "PAY-311", "summary": "Update API docs for payment endpoints", "type": "Task", "status": "Done", "priority": "Low", "assignee": "Tal S.", "resolution": "Done", "labels": ["docs"]},
+    {"key": "PAY-312", "summary": "Add Grafana dashboard for payment metrics", "type": "Task", "status": "Done", "priority": "Medium", "assignee": "Yoni D.", "resolution": "Done", "labels": ["devops", "monitoring"]},
+    {"key": "PAY-313", "summary": "Implement retry logic for failed payments", "type": "Story", "status": "Done", "priority": "High", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend", "payments"]}
+  ],
+  "not_completed": [
+    {"key": "PAY-314", "summary": "Add subscription management UI", "type": "Story", "status": "In Progress", "priority": "High", "assignee": "Amit R.", "resolution": "Unresolved", "labels": ["frontend"]},
+    {"key": "PAY-315", "summary": "Implement proration for plan changes", "type": "Story", "status": "In Progress", "priority": "Medium", "assignee": "Noa K.", "resolution": "Unresolved", "labels": ["backend", "payments"]},
+    {"key": "PAY-316", "summary": "Fix timeout on large invoice PDF generation", "type": "Bug", "status": "Open", "priority": "High", "assignee": "Unassigned", "resolution": "Unresolved", "labels": ["backend", "bug"]},
+    {"key": "PAY-317", "summary": "Add email notification for failed payments", "type": "Story", "status": "To Do", "priority": "Medium", "assignee": "Unassigned", "resolution": "Unresolved", "labels": ["backend", "notifications"]},
+    {"key": "PAY-318", "summary": "Mobile responsive checkout page", "type": "Bug", "status": "Open", "priority": "Medium", "assignee": "Amit R.", "resolution": "Unresolved", "labels": ["frontend", "mobile", "bug"]}
+  ],
+  "bugs": [
+    {"key": "PAY-308", "summary": "Fix currency conversion rounding error", "type": "Bug", "status": "Done", "priority": "Critical", "assignee": "Noa K.", "resolution": "Done", "labels": ["backend", "payments", "bug"]},
+    {"key": "PAY-310", "summary": "Fix duplicate webhook processing", "type": "Bug", "status": "Done", "priority": "High", "assignee": "Yoni D.", "resolution": "Done", "labels": ["backend", "bug"]},
+    {"key": "PAY-316", "summary": "Fix timeout on large invoice PDF generation", "type": "Bug", "status": "Open", "priority": "High", "assignee": "Unassigned", "resolution": "Unresolved", "labels": ["backend", "bug"]},
+    {"key": "PAY-318", "summary": "Mobile responsive checkout page", "type": "Bug", "status": "Open", "priority": "Medium", "assignee": "Amit R.", "resolution": "Unresolved", "labels": ["frontend", "mobile", "bug"]}
+  ],
+  "sample_comments": [
+    "[PAY-308] Found edge case with JPY - zero decimal currency not handled correctly. Fixed in PR #412.",
+    "[PAY-310] Webhooks were being processed twice due to missing idempotency key. Added dedup logic using event ID.",
+    "[PAY-314] Blocked on design review - waiting for updated mockups from product. Pushed to next sprint.",
+    "[PAY-315] Stripe proration API is more complex than estimated. Need another sprint to handle edge cases.",
+    "[PAY-316] PDF generation times out for invoices with 50+ line items. Need to investigate async generation.",
+    "[PAY-306] Stripe test environment configured. Added webhook forwarding via Stripe CLI for local dev.",
+    "[PAY-301] Checkout session implementation complete. Supports both one-time and subscription payments.",
+    "[PAY-304] E2E tests cover happy path and 3 failure scenarios. Need to add subscription flow tests next sprint.",
+    "[PAY-312] Grafana dashboard shows payment success rate, avg processing time, and daily revenue. Team loved it."
+  ]
+}
