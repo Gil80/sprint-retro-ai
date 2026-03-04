@@ -90,8 +90,8 @@ performance improvements and several stability fixes.
 ## Quick Start
 
 ```bash
-git clone https://github.com/Gil80/sprint-retro-ai.git
-cd sprint-retro-ai
+git clone https://github.com/Gil80/pm-ai-toolkit.git
+cd pm-ai-toolkit
 pip install -r requirements.txt
 
 export AI_API_KEY="your-openai-or-anthropic-key"
@@ -153,7 +153,7 @@ python scrips/release_notes.py --git --since-tag v2.3.0 --version "2.4.0" --outp
 ## Project Structure
 
 ```
-sprint-retro-ai/
+pm-ai-toolkit/
 ├── scrips/
 │   ├── retro_analyzer.py       # Sprint retrospective generator
 │   └── release_notes.py        # Release notes generator
